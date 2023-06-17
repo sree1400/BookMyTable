@@ -1,0 +1,146 @@
+<!-- registration2.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration - Restaurant 2</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="date"],
+    select {
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      transition: border-color 0.3s;
+    }
+
+    input[type="text"]:focus,
+    input[type="tel"]:focus,
+    input[type="date"]:focus,
+    select:focus {
+      border-color: #FF5722;
+    }
+
+    .radio-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .radio-group label {
+      margin-right: 20px;
+    }
+
+    .submit-button {
+      padding: 12px 24px;
+      background-color: #FF5722;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+      text-align: center;
+    }
+
+    .submit-button:hover {
+      background-color: #FF7043;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Registration - Restaurant 2</h1>
+    <!--          -------------           -->
+    <form action="">
+    <table align="center" cellspacing="20">
+      <tr>
+        <td><label for="name">Name:</label></td>
+        <td><input type="text" id="name" name="name" placeholder="Enter your name" required></td>
+      </tr>
+      <tr>
+        <td><label for="phone">Phone:</label></td>
+        <td><input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required></td>
+      </tr>
+      <tr>
+        <td><label for="date">Date:</label></td>
+        <td><input type="date" id="date" name="date" required></td>
+      </tr>
+      <tr>
+        <td><label for="time">Time:</label></td>
+        <td><input type="time" id="time" name="time" required></td>
+      </tr>
+      <tr></tr>
+      <tr></tr>
+      <tr>
+        <td><label for="payment">Payment Method:</label></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <div class="radio-group" style="font-size: smaller;">
+            <label>
+              <input type="radio" name="payment" value="upi" required>
+              UPI
+            </label>
+            <label>
+              <input type="radio" name="payment" value="netbanking" required>
+              Netbanking
+            </label>
+            <label>
+              <input type="radio" name="payment" value="credit" required>
+              Credit Card
+            </label>
+            <label>
+              <input type="radio" name="payment" value="debit" required>
+              Debit Card
+            </label>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <a href="success.html" class="submit-button" style="float: right;">Book Now</a>
+        </td>
+      </tr>
+    </table>
+  </form>
+  </div>
+</body>
+</html>
